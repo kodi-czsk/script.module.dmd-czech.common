@@ -112,6 +112,7 @@ def SEND_STATS(name, type):
         except:
             print "Chyba načtení novinek"
 def STATS(name, item_type):
+	return # sluzba pre statistiky na kodi.extrapictures.cz nie je dostupna
 	try:
 		t = threading.Thread(target=SEND_STATS, args = (name, item_type))
 		t.daemon = True
